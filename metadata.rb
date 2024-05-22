@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache-2.0'
 description 'Installs the iptables daemon and provides a LWRP for managing rules'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '4.4.1'
+version '4.4.2'
 
 recipe 'default', 'Installs iptables and sets up .d style config directory of iptables rules'
 recipe 'disabled', 'Disables iptables'
@@ -13,6 +13,6 @@ recipe 'disabled', 'Disables iptables'
   supports os
 end
 
-source_url 'https://github.com/chef-cookbooks/iptables'
-issues_url 'https://github.com/chef-cookbooks/iptables/issues'
+source_url 'https://github.com/itison/iptables'
+issues_url 'https://github.com/itison/iptables/issues'
 chef_version '>= 12.10' if respond_to?(:chef_version)
